@@ -25,7 +25,7 @@ For more information: [link](https://en.wikipedia.org/wiki/Langton%27s_ant)
 
 ### Terminal:
 
-*curl -X PUT "http://localhost:8082/machine?size=3000"*
+```curl -X PUT "http://localhost:8082/machine?size=3000"```
 
 
 
@@ -38,7 +38,8 @@ Java 11, Spring Boot, Maven, JUnit. Also I like to use of advantage of SonarLint
 
 ### Representing the Grid: 
 
-According to the problem, the squares of our Grid can be white or black. Because the grid is initially all white, just knowing the coordinates to be painted black is enough at that time. So we can store only black squares in Grid. Like that we don’t need to keep the knowledge of squares’ color. As a structure I decided to use HashSet to store the black squares (x, y). That help me to minimize the complexity of searching, adding and removing operations in grid. (O(1) for each of them.)
+According to the problem, the squares of our Grid can be white or black. Because the grid is initially all white, just knowing the coordinates to be painted black is enough at that time. 
+So we can store only black squares in Grid. Like that we don’t need to keep the knowledge of squares’ color. As a structure I decided to use HashSet to store the black squares (x, y). That help me to minimize the complexity of searching, adding and removing operations in grid. (O(1) for each.)
 
 ### Representing the Direction of Machine:
 
@@ -56,13 +57,17 @@ This class has:
 I needed to write a step class representing a step of the Machine in the Grid passed as an input.
 
 The purpose of the algorithm is to move forward the machine using rules that I mentioned above and color the final situation of the grid to file. So I chose to keep only black squares in HashSet. The machine begins moving from (0,0) coordinates, following the right direction on while square. That’s why I add these coordinates into the grid because it will be black when the machine moves. Because the current square is white, machine will turn 90°  clockwise. Then the machine will move forward 1 unit. 
-If the new square coordinates already in the grid, I would remove that coordinates from the grid because its color will be white after walking on it. If the new square coordinates do not exist in the grid, then I will add the coordinates into the grid because it’s color white and will be black in the next step. Eventually, new coordinates will assign to current coordinates. 
+If the new square coordinates already in the grid, I would remove that coordinates from the grid because its color will be white after walking on it. 
+If the new square coordinates do not exist in the grid, then I will add the coordinates into the grid because it’s color white and will be black in the next step. 
+
+Eventually, new coordinates will assign to current coordinates. 
+
 This move will continue up to the number of steps.
 
 ### Painting the Output Grid to File:
 
 I used Graphics2D library of Java to paint it into the file. File path is:
-*System.getProperty("user.dir") + "/machine.png"*
+**System.getProperty("user.dir") + "/machine.png"**
 
 
 
