@@ -110,11 +110,19 @@ I learnt that this is well-known Turing machine problem invented by Chris Langt
 
 ## Example Outputs
 
+### 50th Step
+
 ![50 Step](/images/50.png)
+
+### 1000th Step
 
 ![1000 Step](/images/1000.png)
 
+### 12000th Step
+
 ![12000 Step](/images/12000.png)
+
+### 15000th Step
 
 ![15000 Step](/images/15000.png)
 
