@@ -23,6 +23,8 @@ For more information: [link](https://en.wikipedia.org/wiki/Langton%27s_ant)
 
 ### Postman:
 
+![Postman](/images/postman.png)
+
 
 
 ### Terminal:
@@ -107,4 +109,13 @@ I learnt that this is well-known Turing machine problem invented by Chris Langt
 
 
 ## Example Outputs
+
+![50 Step](/images/50.png)
+
+![1000 Step](/images/1000.png)
+
+![12000 Step](/images/12000.png)
+
+![15000 Step](/images/15000.png)
+
 
