@@ -29,7 +29,7 @@ For more information: [link](https://en.wikipedia.org/wiki/Langton%27s_ant)
 
 ### Terminal:
 
-```curl -X PUT "http://localhost:8082/machine?size=3000"```
+```curl -X PUT -H "Content-Type: application/json" -d '{"size":"15000"}' "http://localhost:8082/machine"```
 
 
 
@@ -78,6 +78,8 @@ This move will continue up to the number of steps.
 
 I used Graphics2D library of Java to paint it into the file. File path is:
 ```System.getProperty("user.dir") + "/machine.png"```
+
+While moving forward, I calculated the max absolute value of coordinates(x, y). Thus I defined width and height of the Grid.
 
 
 
