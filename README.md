@@ -107,7 +107,7 @@ I learnt that this is well-known Turing machine problem invented by Chris Langt
 * Test codes for service class,
 * Lifetime simulation,
 * More than one machine in the grid,
-* To limit step size. (@Max annotation of Java),
+* To limit step size (@Max annotation of Java),
 * Supplying multiple output files by given mutliple step size.
 
 
