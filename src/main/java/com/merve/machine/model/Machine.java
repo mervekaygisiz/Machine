@@ -1,5 +1,8 @@
 package com.merve.machine.model;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class Machine {
 
     private Square currentSquare;
@@ -7,6 +10,8 @@ public class Machine {
     private Grid grid;
     private int maxX;
     private int maxY;
+
+    public static final Logger logger = LoggerFactory.getLogger(Machine.class);
 
     public Machine(Grid grid) {
         currentSquare = new Square(0, 0);
@@ -26,6 +31,9 @@ public class Machine {
     }
 
     public void moveForward() {
+
+        logger.info("Coordinates of machine  x: {} , y: {}, direction: {}", currentSquare.getX(), currentSquare.getY(), direction);
+
         turnDirection();
 
         int currentX = currentSquare.getX();
