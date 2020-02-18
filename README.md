@@ -92,7 +92,7 @@ The algorithm repeats up to the number of steps. So total complexity of the prob
 
 
 
-## What I Learnt?
+## What I Learnt
 
 To optimize the usage of memory and time complexity I need to use right data structure for the problem. Also keeping grid size up to the number of black squares is a good choice for the complexity.
 Thus I reduced the complexity from O(n<sup>2</sup>) to O(n) compare to my previous study.
