@@ -15,7 +15,7 @@ public class GridView {
     private static final String PROJECT_PATH = System.getProperty("user.dir") + "/machine.png";
 
     private Grid grid;
-    Square currentSquare;
+    private Square currentSquare;
 
     public GridView(Grid grid, Square currentSquare) {
         this.grid = grid;
