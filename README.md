@@ -37,9 +37,6 @@ For more information: [link](https://en.wikipedia.org/wiki/Langton%27s_ant)
 
 Java 11, Spring Boot, Maven, JUnit. 
 
-Also I like to use of advantage of SonarLint and I strongly recommend it to every developer.
-
-
 ## Approach of OOP
 
 ### Representing the Grid: 
